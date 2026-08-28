@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DiscoZik</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+/* =========================================================
+   DiscoZik — style.css
+   DA : dégradé mesh bleu-lavande clair, nav pill flottante,
+   wordmark noir géant, boutons pleins (façon Sentinel Script)
+   ========================================================= */
+:root {
+  --bg-top: #f3faf6;
+  --bg-mid: #bfead9;
+  --bg-bottom: #5fc4a0;
+
+  --ink: #0e1020;
+  --ink-soft: #3a3d5c;
+  --text-muted: #5b5f83;
+  --text-faint: #8286a6;
+
+  --blue: #0fc097;
+  --blue-bright: #33dcb0;
+  --blue-deep: #0a8f70;
+
+  --glass: rgba(255, 255, 255, 0.55);
+  --glass-strong: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.65);
+  --card-border: rgba(30, 34, 90, 0.08);
+
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --max-w: 1180px;
+  --radius-lg: 22px;
+  --radius-md: 15px;
+  --radius-sm: 10px;
+
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  background:
+    radial-gradient(ellipse 55% 40% at 25% -5%, rgba(255, 255, 255, 0.9), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 85% 15%, rgba(140, 160, 250, 0.55), transparent 65%),
+    radial-gradient(ellipse 75% 65% at 45% 100%, rgba(90, 105, 220, 0.55), transparent 70%),
+    linear-gradient(180deg, var(--bg-top) 0%, var(--bg-mid) 48%, var(--bg-bottom) 100%);
+  background-attachment: fixed;
+  color: var(--ink);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+::selection { background: var(--blue); color: #fff; }
+:focus-visible { outline: 2px solid var(--blue-deep); outline-offset: 3px; border-radius: 4px; }
+
+/* =========================================================
+   Header — nav pill flottante
+   ========================================================= */
+.site-header {
+  position: sticky;
+  top: 14px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+.nav-pill {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  max-width: 880px;
+  padding: 8px 10px 8px 18px;
+  border-radius: 999px;
+  background: var(--glass);
+  backdrop-filter: blur(22px) saturate(180%);
+  -webkit-backdrop-filter: blur(22px) saturate(180%);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 10px 34px -14px rgba(40, 48, 130, 0.35);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.02rem;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-right: 6px;
+}
+
+.brand-mark {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.brand-mark img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.nav-links { display: flex; align-items: center; gap: 2px; list-style: none; flex: 1; }
+
+.nav-links a {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: color 0.2s ease, background 0.2s ease;
+  white-space: nowrap;
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: var(--ink);
+  background: var(--glass-strong);
+}
+
+.nav-toggle {
+  display: none;
+  background: var(--glass-strong);
+  border: 1px solid var(--card-border);
+  border-radius: 999px;
+  color: var(--ink);
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   Buttons — pleins et nets
+   ========================================================= */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 26px;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, filter 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--ink);
+  color: #fff;
+  box-shadow: 0 10px 26px -12px rgba(14, 16, 32, 0.55);
+}
+
+.btn-primary:hover { transform: translateY(-2px); filter: brightness(1.15); }
+
+.btn-blue {
+  background: linear-gradient(135deg, var(--blue-bright), var(--blue));
+  color: #fff;
+  box-shadow: 0 10px 26px -10px rgba(15, 192, 151, 0.55);
+}
+
+.btn-blue:hover { transform: translateY(-2px); filter: brightness(1.08); }
+
+.btn-ghost {
+  background: var(--glass-strong);
+  border-color: var(--card-border);
+  color: var(--ink);
+}
+
+.btn-ghost:hover { transform: translateY(-2px); background: #fff; }
+
+.btn-sm { padding: 8px 16px; font-size: 0.82rem; }
+.btn:active { transform: translateY(0); }
+
+/* =========================================================
+   Hero
+   ========================================================= */
+.hero { position: relative; padding: 120px 0 90px; overflow: hidden; }
+
+.hero-orb {
+  position: absolute;
+  top: -220px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 820px;
+  height: 820px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.7), rgba(140, 160, 250, 0.15) 55%, transparent 72%);
+  filter: blur(6px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-inner { position: relative; z-index: 2; text-align: center; max-width: 820px; margin: 0 auto; }
+
+.eyebrow-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  background: var(--glass-strong);
+  border: 1px solid var(--card-border);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 36px;
+}
+
+.eyebrow-badge .dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #2fbf6a;
+  box-shadow: 0 0 8px #2fbf6a;
+  animation: pulse-dot 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+.hero-wordmark {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.6rem, 8vw, 5.6rem);
+  letter-spacing: -0.01em;
+  line-height: 1;
+  color: var(--ink);
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  word-break: break-word;
+}
+
+.hero-wordmark-icon {
+  width: 0.85em;
+  height: 0.85em;
+  border-radius: 26%;
+  background: linear-gradient(135deg, var(--blue-bright), var(--blue-deep));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 14px 30px -12px rgba(64, 72, 201, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.hero-wordmark-icon svg { width: 52%; height: 52%; }
+
+.nav-icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--glass-strong);
+  border: 1px solid var(--card-border);
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background 0.2s ease;
+  flex-shrink: 0;
+}
+
+.nav-icon-btn:hover { transform: translateY(-2px); background: #fff; }
+
+.hero-sub {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 540px;
+  margin: 0 auto 36px;
+}
+
+.hero-cta { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 56px; }
+
+.compat-row { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+
+.compat-icons { display: flex; align-items: center; gap: 12px; }
+
+.compat-icon {
+  width: 52px; height: 52px;
+  border-radius: 16px;
+  background: var(--glass-strong);
+  border: 1px solid var(--card-border);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 10px 24px -14px rgba(40, 48, 130, 0.35);
+  transition: transform 0.2s ease;
+}
+
+.compat-icon:hover { transform: translateY(-3px); }
+
+/* =========================================================
+   Section shell
+   ========================================================= */
+.section { padding: 90px 0; position: relative; }
+
+.section-head { max-width: 620px; margin: 0 auto 52px; text-align: center; }
+
+.section-eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.section-head h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+  color: var(--ink);
+}
+
+.section-head p { color: var(--text-muted); }
+
+/* =========================================================
+   Feature "tracklist" — cartes verre claires
+   ========================================================= */
+.tracklist { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+
+.track {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 26px;
+  border-radius: var(--radius-lg);
+  background: var(--glass);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  box-shadow: 0 14px 34px -22px rgba(30, 34, 90, 0.3);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.track.in-view { opacity: 1; transform: translateY(0); }
+
+.track:hover { background: var(--glass-strong); box-shadow: 0 18px 40px -18px rgba(30, 34, 90, 0.4); }
+
+.track-num { font-family: var(--font-display); font-size: 0.85rem; color: var(--text-faint); width: 30px; flex-shrink: 0; padding-top: 4px; }
+
+.track-icon {
+  width: 42px; height: 42px; border-radius: 12px;
+  background: linear-gradient(135deg, rgba(109, 139, 255, 0.25), rgba(109, 139, 255, 0.08));
+  border: 1px solid var(--card-border);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+
+.track-icon svg { width: 20px; height: 20px; stroke: var(--blue-deep); }
+
+.track-body h3 { font-family: var(--font-display); font-size: 1.05rem; margin-bottom: 6px; color: var(--ink); }
+.track-body p { color: var(--text-muted); font-size: 0.92rem; }
+
+.track-tag {
+  margin-top: 12px;
+  display: inline-block;
+  font-size: 0.72rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(15, 192, 151, 0.12);
+  border: 1px solid rgba(15, 192, 151, 0.2);
+  color: var(--blue-deep);
+  font-family: var(--font-display);
+  letter-spacing: 0.03em;
+}
+
+/* =========================================================
+   Now playing / stats
+   ========================================================= */
+.now-playing-panel {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--card-border);
+  background: var(--glass);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  box-shadow: 0 20px 44px -24px rgba(30, 34, 90, 0.35);
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.stat { text-align: center; }
+
+.stat-num {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.stat-label { margin-top: 6px; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* =========================================================
+   Auth — widget de connexion
+   ========================================================= */
+.auth-widget { display: flex; align-items: center; gap: 8px; }
+
+.auth-profile { display: flex; align-items: center; gap: 8px; }
+.auth-profile-owner {
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 3px 10px 3px 3px;
+  transition: background 0.2s ease;
+}
+.auth-profile-owner:hover, .auth-profile-owner:focus-visible { background: var(--glass-strong); }
+
+.auth-owner-tag {
+  font-size: 0.66rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--blue-deep); background: rgba(15, 192, 151, 0.14);
+  padding: 3px 8px; border-radius: 999px; white-space: nowrap;
+}
+
+.auth-avatar {
+  width: 30px; height: 30px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--blue-bright), var(--blue-deep));
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-size: 0.75rem; font-weight: 700; color: #fff;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  flex-shrink: 0;
+}
+
+.auth-avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+.auth-name { font-size: 0.84rem; color: var(--ink); font-weight: 500; max-width: 90px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+
+.auth-fallback-note { font-size: 0.72rem; color: var(--text-faint); }
+
+/* =========================================================
+   Legal pages
+   ========================================================= */
+.legal-hero { padding: 150px 0 40px; }
+
+.legal-hero h1 { font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.7rem); letter-spacing: -0.01em; margin-bottom: 10px; color: var(--ink); }
+.legal-hero p { color: var(--text-muted); }
+
+.legal-updated {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 0.8rem;
+  color: var(--text-faint);
+  padding: 5px 12px;
+  border: 1px solid var(--card-border);
+  background: var(--glass-strong);
+  border-radius: 999px;
+}
+
+.legal-body { padding: 40px 0 100px; display: grid; grid-template-columns: 240px 1fr; gap: 56px; }
+
+.legal-toc { position: sticky; top: 96px; align-self: start; }
+
+.legal-toc h4 { font-family: var(--font-display); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-faint); margin-bottom: 14px; }
+
+.legal-toc ol { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+
+.legal-toc a { display: block; padding: 7px 10px; border-radius: var(--radius-sm); font-size: 0.86rem; color: var(--text-muted); transition: background 0.2s ease, color 0.2s ease; }
+.legal-toc a:hover { background: var(--glass-strong); color: var(--ink); }
+
+.legal-content { background: var(--glass); border: 1px solid var(--card-border); border-radius: var(--radius-lg); padding: 8px 36px; backdrop-filter: blur(16px); }
+
+.legal-content section { padding: 30px 0; border-bottom: 1px solid var(--card-border); scroll-margin-top: 96px; }
+.legal-content section:last-child { border-bottom: none; }
+
+.legal-content h2 { font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 12px; display: flex; align-items: baseline; gap: 10px; color: var(--ink); }
+.legal-content h2 .legal-num { color: var(--blue-deep); font-size: 0.9rem; }
+
+.legal-content p, .legal-content li { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 10px; }
+.legal-content ul { padding-left: 20px; margin-bottom: 10px; }
+.legal-content a { color: var(--blue-deep); text-decoration: underline; text-underline-offset: 2px; }
+
+/* =========================================================
+   Verify page
+   ========================================================= */
+.verify-status {
+  display: flex; align-items: center; gap: 12px;
+  padding: 20px 24px; border-radius: var(--radius-md);
+  background: var(--glass); border: 1px solid var(--card-border);
+  backdrop-filter: blur(14px);
+  margin-bottom: 44px;
+}
+
+.verify-status .status-dot {
+  width: 12px; height: 12px; border-radius: 50%;
+  background: #2fbf6a; box-shadow: 0 0 12px #2fbf6a;
+  flex-shrink: 0; animation: pulse-dot 1.8s ease-in-out infinite;
+}
+
+.verify-status strong { font-family: var(--font-display); display: block; margin-bottom: 2px; color: var(--ink); }
+.verify-status span.sub { color: var(--text-muted); font-size: 0.88rem; }
+
+.checklist { display: flex; flex-direction: column; gap: 12px; margin-bottom: 48px; }
+
+.check-item {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 18px 20px; border-radius: var(--radius-md);
+  background: var(--glass); border: 1px solid var(--card-border);
+  backdrop-filter: blur(10px);
+}
+
+.check-mark {
+  width: 24px; height: 24px; border-radius: 50%;
+  background: #2fbf6a;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 2px;
+}
+
+.check-mark svg { width: 14px; height: 14px; stroke: #fff; stroke-width: 3; }
+
+.check-item h4 { font-family: var(--font-display); font-size: 0.95rem; margin-bottom: 3px; color: var(--ink); }
+.check-item p { color: var(--text-muted); font-size: 0.88rem; }
+
+/* =========================================================
+   Contact form
+   ========================================================= */
+.contact-form { display: grid; gap: 16px; max-width: 560px; margin: 0 auto; }
+
+.field { display: flex; flex-direction: column; gap: 7px; }
+.field label { font-size: 0.85rem; color: var(--text-muted); }
+
+.field input, .field textarea {
+  background: var(--glass-strong);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field input:focus, .field textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(15, 192, 151, 0.15); outline: none; }
+.field textarea { resize: vertical; min-height: 110px; }
+
+.field-error { font-size: 0.78rem; color: #d43a4d; display: none; }
+.field.invalid .field-error { display: block; }
+.field.invalid input, .field.invalid textarea { border-color: #d43a4d; }
+
+.form-status {
+  font-size: 0.9rem; padding: 12px 16px; border-radius: var(--radius-sm);
+  background: rgba(47, 191, 106, 0.14); border: 1px solid rgba(47, 191, 106, 0.35);
+  color: #1c8a4c; display: none;
+}
+.form-status.show { display: block; }
+
+/* =========================================================
+   Footer
+   ========================================================= */
+.site-footer { padding: 48px 0 32px; margin-top: 40px; }
+
+.footer-grid { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 32px; margin-bottom: 32px; }
+
+.footer-brand p { color: var(--text-muted); font-size: 0.88rem; margin-top: 8px; max-width: 280px; }
+
+.footer-links { display: flex; gap: 56px; flex-wrap: wrap; }
+
+.footer-col h5 { font-family: var(--font-display); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-faint); margin-bottom: 14px; }
+
+.footer-col a { display: block; color: var(--text-muted); font-size: 0.88rem; padding: 5px 0; transition: color 0.2s ease; }
+.footer-col a:hover { color: var(--ink); }
+
+.footer-bottom {
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+  padding-top: 24px; border-top: 1px solid var(--card-border);
+  font-size: 0.82rem; color: var(--text-faint);
+}
+
+/* =========================================================
+   Reveal-on-scroll
+   ========================================================= */
+.reveal { opacity: 0; transform: translateY(24px); transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s ease; }
+.reveal.in-view { opacity: 1; transform: translateY(0); }
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+@media (max-width: 860px) {
+  .nav-links {
+    position: fixed; top: 74px; left: 16px; right: 16px;
+    flex-direction: column; align-items: stretch;
+    background: var(--glass-strong);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: 10px; gap: 2px;
+    box-shadow: 0 14px 34px -14px rgba(30, 34, 90, 0.4);
+    opacity: 0; pointer-events: none; transform: translateY(-8px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  .nav-links.open { opacity: 1; pointer-events: auto; transform: translateY(0); }
+  .nav-links a { padding: 10px 14px; }
+  .nav-toggle { display: flex; }
+  .tracklist { grid-template-columns: 1fr; }
+  .now-playing-panel { grid-template-columns: 1fr; }
+  .legal-body { grid-template-columns: 1fr; }
+  .legal-toc { position: static; }
+  .legal-content { padding: 4px 22px; }
+}
+
+@media (max-width: 540px) {
+  .hero { padding: 130px 0 64px; }
+  .footer-grid { flex-direction: column; }
+  .hero-wordmark { font-size: clamp(2.1rem, 13vw, 3rem); gap: 12px; }
+}
+
+
+.demo-page { display: none; }
+.demo-page-active { display: block; }
+
+/* =========================================================
+   Modale comptes (connexion / inscription / panel owner)
+   ========================================================= */
+.dz-modal-overlay {
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(14, 16, 32, 0.45);
+  backdrop-filter: blur(4px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px;
+}
+
+.dz-modal {
+  width: 100%; max-width: 380px;
+  background: #fff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 24px 60px -20px rgba(14, 16, 32, 0.45);
+  padding: 20px;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.dz-modal-lg { max-width: 560px; }
+
+.dz-modal-tabs { display: flex; align-items: center; gap: 6px; margin-bottom: 16px; }
+
+.dz-tab {
+  border: none; background: var(--glass);
+  color: var(--text-muted); font-weight: 600; font-size: 0.85rem;
+  padding: 8px 14px; border-radius: 999px; cursor: pointer;
+}
+.dz-tab.active { background: var(--ink); color: #fff; }
+
+.dz-modal-close {
+  margin-left: auto; border: none; background: none;
+  font-size: 1.4rem; line-height: 1; cursor: pointer; color: var(--text-muted);
+  padding: 4px 8px;
+}
+.dz-modal-close:hover { color: var(--ink); }
+
+.dz-modal-form { display: flex; flex-direction: column; gap: 14px; }
+.dz-modal-form[hidden] { display: none; }
+.dz-modal-error {
+  color: #d64545; font-size: 0.82rem; background: rgba(214, 69, 69, 0.08);
+  border-radius: var(--radius-sm); padding: 8px 12px;
+}
+
+.dz-panel-hint { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 12px; }
+
+.dz-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
+
+.dz-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 14px; border-radius: var(--radius-sm);
+  background: var(--glass); border: 1px solid var(--card-border);
+  font-size: 0.88rem;
+}
+
+.dz-inline-form { display: flex; gap: 8px; flex-wrap: wrap; }
+.dz-inline-form input {
+  flex: 1; min-width: 120px; padding: 9px 12px; border-radius: var(--radius-sm);
+  border: 1px solid var(--card-border); font-family: var(--font-body); font-size: 0.86rem;
+}
+
+.dz-support-msg {
+  padding: 12px 14px; border-radius: var(--radius-sm);
+  background: var(--glass); border: 1px solid var(--card-border);
+  font-size: 0.86rem; margin-bottom: 8px;
+}
+.dz-support-msg p { margin: 6px 0; color: var(--ink-soft); }
+.dz-support-date { font-size: 0.74rem; color: var(--text-faint); }
+
+/* =========================================================
+   Page Status
+   ========================================================= */
+.status-board { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+
+.status-row {
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 18px; border-radius: var(--radius-md);
+  background: var(--glass); border: 1px solid var(--card-border);
+}
+
+.status-chip { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; display: inline-block; }
+.status-chip-green { background: #1fbf7c; box-shadow: 0 0 0 4px rgba(31, 191, 124, 0.18); }
+.status-chip-yellow { background: #e6b325; box-shadow: 0 0 0 4px rgba(230, 179, 37, 0.18); }
+.status-chip-red { background: #e0473f; box-shadow: 0 0 0 4px rgba(224, 71, 63, 0.18); }
+
+.status-row-label { font-family: var(--font-display); font-weight: 600; color: var(--ink); flex: 1; }
+.status-row-text { font-size: 0.86rem; color: var(--text-muted); }
+
+.status-legend {
+  display: flex; flex-wrap: wrap; gap: 18px;
+  font-size: 0.82rem; color: var(--text-muted);
+}
+.status-legend span { display: flex; align-items: center; gap: 6px; }
+
+.dz-status-editor { display: flex; flex-direction: column; gap: 10px; margin-bottom: 8px; }
+.dz-status-editor-row {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  padding: 12px 14px; border-radius: var(--radius-sm);
+  background: var(--glass); border: 1px solid var(--card-border);
+}
+.dz-status-editor-row strong { min-width: 110px; }
+.dz-status-btns { display: flex; gap: 6px; }
+.dz-status-btn {
+  border: 1px solid var(--card-border); background: #fff; cursor: pointer;
+  padding: 6px 12px; border-radius: 999px; font-size: 0.78rem; font-weight: 600;
+  display: flex; align-items: center; gap: 6px; color: var(--text-muted);
+}
+.dz-status-btn.active { color: #fff; border-color: transparent; }
+.dz-status-btn.active[data-color="green"] { background: #1fbf7c; }
+.dz-status-btn.active[data-color="yellow"] { background: #e6b325; }
+.dz-status-btn.active[data-color="red"] { background: #e0473f; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-pill">
+    <a href="#home" data-page="home" class="brand">
+      <span class="brand-mark">
+        <img src="data:image/png;base64,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" alt="Logo DiscoZik" />
+      </span>
+      DiscoZik
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#home" data-page="home" class="active">Accueil</a></li>
+      <li><a href="#home-commandes" data-page="home" data-anchor="commandes">Commandes</a></li>
+      <li><a href="#tos" data-page="tos">ToS</a></li>
+      <li><a href="#privacy" data-page="privacy">Privacy</a></li>
+      <li><a href="#status" data-page="status">Status</a></li>
+      <li><a href="#home-contact" data-page="home" data-anchor="contact">Support</a></li>
+    </ul>
+
+    <div style="display:flex; align-items:center; gap:10px;">
+      <a href="https://discord.gg/hXdMDfEAQU" target="_blank" rel="noopener" class="nav-icon-btn" aria-label="Rejoindre le Discord">
+        <svg width="16" height="16" viewBox="0 0 28.93 20" fill="none"><path d="M24.5 2.06A23.7 23.7 0 0 0 18.6.05a.09.09 0 0 0-.1.04 16.5 16.5 0 0 0-.73 1.5 21.9 21.9 0 0 0-6.58 0 15 15 0 0 0-.74-1.5.09.09 0 0 0-.1-.04A23.6 23.6 0 0 0 4.44 2.06a.08.08 0 0 0-.04.03C.98 7.1-.15 12 .4 16.84a.1.1 0 0 0 .04.07 23.8 23.8 0 0 0 7.17 3.63.1.1 0 0 0 .1-.03c.55-.76 1.05-1.55 1.47-2.39a.09.09 0 0 0-.05-.13 15.7 15.7 0 0 1-2.25-1.07.095.095 0 0 1-.01-.16c.15-.11.3-.23.45-.35a.09.09 0 0 1 .09-.01c4.71 2.15 9.82 2.15 14.48 0a.09.09 0 0 1 .09.01c.15.12.3.24.45.35a.095.095 0 0 1-.01.16 14.7 14.7 0 0 1-2.25 1.07.09.09 0 0 0-.05.14c.43.83.93 1.62 1.47 2.38a.09.09 0 0 0 .1.03 23.7 23.7 0 0 0 7.2-3.63.09.09 0 0 0 .04-.07c.66-5.6-.1-10.46-4.4-14.75a.08.08 0 0 0-.04-.03ZM9.68 13.9c-1.42 0-2.59-1.3-2.59-2.9 0-1.6 1.15-2.9 2.6-2.9s2.6 1.32 2.58 2.9c0 1.6-1.15 2.9-2.6 2.9Zm9.58 0c-1.42 0-2.59-1.3-2.59-2.9 0-1.6 1.15-2.9 2.6-2.9s2.6 1.32 2.58 2.9c0 1.6-1.14 2.9-2.6 2.9Z" fill="currentColor"/></svg>
+      </a>
+      <div data-auth-slot></div>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div id="page-home" class="demo-page">
+    <!-- HERO -->
+<section class="hero">
+  <div class="hero-orb" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <span class="eyebrow-badge">
+      <span class="dot"></span>
+      En cours de vérification Discord
+    </span>
+
+    <h1 class="hero-wordmark">
+      <span class="hero-wordmark-icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M9.3 7.3v9.4l7.4-4.7-7.4-4.7Z" fill="#fff"/><path d="M4 12a8 8 0 0 1 8-8" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/><path d="M20 12a8 8 0 0 1-8 8" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/></svg>
+      </span>
+      DiscoZik
+    </h1>
+
+    <p class="hero-sub">
+      Ta radio de serveur, toujours à l'heure. YouTube, Spotify, file d'attente intelligente et commandes DJ complètes — un bot, zéro friction.
+    </p>
+
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1542224608017780858&permissions=8&integration_type=0&scope=bot" target="_blank" rel="noopener">
+        Inviter le bot
+      </a>
+      <a class="btn btn-blue" href="https://discord.gg/hXdMDfEAQU" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 28.93 20" fill="none"><path d="M24.5 2.06A23.7 23.7 0 0 0 18.6.05a.09.09 0 0 0-.1.04 16.5 16.5 0 0 0-.73 1.5 21.9 21.9 0 0 0-6.58 0 15 15 0 0 0-.74-1.5.09.09 0 0 0-.1-.04A23.6 23.6 0 0 0 4.44 2.06a.08.08 0 0 0-.04.03C.98 7.1-.15 12 .4 16.84a.1.1 0 0 0 .04.07 23.8 23.8 0 0 0 7.17 3.63.1.1 0 0 0 .1-.03c.55-.76 1.05-1.55 1.47-2.39a.09.09 0 0 0-.05-.13 15.7 15.7 0 0 1-2.25-1.07.095.095 0 0 1-.01-.16c.15-.11.3-.23.45-.35a.09.09 0 0 1 .09-.01c4.71 2.15 9.82 2.15 14.48 0a.09.09 0 0 1 .09.01c.15.12.3.24.45.35a.095.095 0 0 1-.01.16 14.7 14.7 0 0 1-2.25 1.07.09.09 0 0 0-.05.14c.43.83.93 1.62 1.47 2.38a.09.09 0 0 0 .1.03 23.7 23.7 0 0 0 7.2-3.63.09.09 0 0 0 .04-.07c.66-5.6-.1-10.46-4.4-14.75a.08.08 0 0 0-.04-.03ZM9.68 13.9c-1.42 0-2.59-1.3-2.59-2.9 0-1.6 1.15-2.9 2.6-2.9s2.6 1.32 2.58 2.9c0 1.6-1.15 2.9-2.6 2.9Zm9.58 0c-1.42 0-2.59-1.3-2.59-2.9 0-1.6 1.15-2.9 2.6-2.9s2.6 1.32 2.58 2.9c0 1.6-1.14 2.9-2.6 2.9Z" fill="#fff"/></svg>
+        Rejoindre le Discord
+      </a>
+    </div>
+
+    <div class="compat-row">
+      <span class="section-eyebrow">Compatible avec</span>
+      <div class="compat-icons">
+        <span class="compat-icon" title="YouTube">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 12s0-3.2-.4-4.7a3 3 0 0 0-2.1-2.1C17.9 4.7 12 4.7 12 4.7s-5.9 0-7.5.5a3 3 0 0 0-2.1 2.1C2 8.8 2 12 2 12s0 3.2.4 4.7a3 3 0 0 0 2.1 2.1c1.6.5 7.5.5 7.5.5s5.9 0 7.5-.5a3 3 0 0 0 2.1-2.1C22 15.2 22 12 22 12Z" stroke="#FF0000" stroke-width="1.6"/><path d="M10 9.5l5 2.5-5 2.5v-5Z" fill="#FF0000"/></svg>
+        </span>
+        <span class="compat-icon" title="Spotify">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9.5" stroke="#1DB954" stroke-width="1.6"/><path d="M7 10.2c3.2-.9 6.8-.6 9.4 1" stroke="#1DB954" stroke-width="1.4" stroke-linecap="round"/><path d="M7.5 13.2c2.6-.7 5.5-.5 7.7.8" stroke="#1DB954" stroke-width="1.4" stroke-linecap="round"/><path d="M8 16c2-.5 4.2-.4 5.9.6" stroke="#1DB954" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" id="commandes">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">La setlist</span>
+      <h2>Quatre fonctionnalités, un seul bouton</h2>
+      <p>Pas de menu caché ni d'abonnement premium pour l'essentiel : tout est là dès l'invitation.</p>
+    </div>
+
+    <div class="tracklist">
+      <article class="track">
+        <span class="track-num">01</span>
+        <span class="track-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm12-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" stroke="currentColor" stroke-width="1.6"/></svg>
+        </span>
+        <div class="track-body">
+          <h3>Lecture YouTube &amp; Spotify</h3>
+          <p>Colle un lien, un titre ou une playlist entière : DiscoZik retrouve la meilleure source audio automatiquement.</p>
+          <span class="track-tag">Streaming</span>
+        </div>
+      </article>
+
+      <article class="track">
+        <span class="track-num">02</span>
+        <span class="track-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h10M4 18h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </span>
+        <div class="track-body">
+          <h3>File d'attente avancée</h3>
+          <p>Réorganise, mélange, boucle ou saute des titres en un clic — la queue s'affiche en direct dans le salon.</p>
+          <span class="track-tag">Queue</span>
+        </div>
+      </article>
+
+      <article class="track">
+        <span class="track-num">03</span>
+        <span class="track-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/></svg>
+        </span>
+        <div class="track-body">
+          <h3>Commandes DJ</h3>
+          <p>Skip, pause, volume, seek, vote-skip : un rôle DJ pour garder le contrôle sans donner les pleins pouvoirs.</p>
+          <span class="track-tag">Contrôle</span>
+        </div>
+      </article>
+
+      <article class="track">
+        <span class="track-num">04</span>
+        <span class="track-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M3 14v-3a2 2 0 0 1 2-2h1V6a3 3 0 0 1 6 0v3h1a2 2 0 0 1 2 2v3M3 14h18M3 14v3a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <div class="track-body">
+          <h3>Égaliseur 24/7</h3>
+          <p>Le bot reste connecté même salon vide, prêt à repartir à la première commande, jour et nuit.</p>
+          <span class="track-tag">Uptime</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">Support</span>
+      <h2>Une question, un bug, une idée ?</h2>
+      <p>Écris-nous, on répond en général sous 48h.</p>
+    </div>
+
+    <form class="contact-form reveal" id="contact-form" novalidate>
+      <div class="field">
+        <label for="c-name">Nom</label>
+        <input type="text" id="c-name" name="name" placeholder="Ton nom" />
+        <span class="field-error">Merci d'indiquer ton nom (2 caractères minimum).</span>
+      </div>
+      <div class="field">
+        <label for="c-email">Email</label>
+        <input type="email" id="c-email" name="email" placeholder="toi@exemple.com" />
+        <span class="field-error">Merci d'indiquer une adresse email valide.</span>
+      </div>
+      <div class="field">
+        <label for="c-message">Message</label>
+        <textarea id="c-message" name="message" placeholder="Décris ta demande..."></textarea>
+        <span class="field-error">Ton message doit contenir au moins 10 caractères.</span>
+      </div>
+      <button type="submit" class="btn btn-primary" style="justify-self:start;">Envoyer le message</button>
+      <div class="form-status"></div>
+    </form>
+  </div>
+</section>
+  </div>
+  <div id="page-tos" class="demo-page">
+    <section class="legal-hero">
+  <div class="container">
+    <h1>Conditions d'utilisation</h1>
+    <p>Les règles du jeu pour utiliser DiscoZik sur ton serveur Discord.</p>
+    <span class="legal-updated">Dernière mise à jour : 26 août 2026</span>
+  </div>
+</section>
+
+<div class="container legal-body">
+  <nav class="legal-toc">
+    <h4>Sommaire</h4>
+    <ol>
+      <li><a href="#acceptation">1. Acceptation des conditions</a></li>
+      <li><a href="#utilisation">2. Utilisation du bot</a></li>
+      <li><a href="#contenu">3. Contenu utilisateur</a></li>
+      <li><a href="#propriete">4. Propriété intellectuelle</a></li>
+      <li><a href="#responsabilite">5. Limitation de responsabilité</a></li>
+      <li><a href="#resiliation">6. Résiliation</a></li>
+      <li><a href="#modifications">7. Modifications des conditions</a></li>
+      <li><a href="#loi">8. Loi applicable</a></li>
+      <li><a href="#contact-legal">9. Contact</a></li>
+    </ol>
+  </nav>
+
+  <div class="legal-content">
+    <section id="acceptation">
+      <h2><span class="legal-num">01</span> Acceptation des conditions</h2>
+      <p>En invitant DiscoZik (« le Bot ») sur un serveur Discord ou en utilisant l'une de ses commandes, tu acceptes sans réserve les présentes Conditions d'Utilisation ainsi que la <a href="#privacy" data-page="privacy">Politique de Confidentialité</a> associée.</p>
+      <p>Si tu n'acceptes pas ces conditions, tu dois retirer le Bot de ton serveur et cesser toute utilisation.</p>
+      <p>Le Bot est édité par l'équipe DiscoZik, ci-après désignée « nous » ou « l'Éditeur ».</p>
+    </section>
+
+    <section id="utilisation">
+      <h2><span class="legal-num">02</span> Utilisation du bot</h2>
+      <p>Le Bot est fourni pour un usage de lecture musicale et de gestion de salons vocaux sur Discord. En l'utilisant, tu t'engages à :</p>
+      <ul>
+        <li>Respecter les <a href="https://discord.com/terms" target="_blank" rel="noopener">Conditions d'Utilisation de Discord</a> et ses Directives Communautaires ;</li>
+        <li>Ne pas utiliser le Bot à des fins illégales, frauduleuses ou malveillantes ;</li>
+        <li>Ne pas tenter de contourner, exploiter ou perturber le fonctionnement du Bot (spam de commandes, exploitation de bugs, déni de service...) ;</li>
+        <li>Ne pas revendre, sous-licencier ou redistribuer l'accès au Bot sans autorisation écrite ;</li>
+        <li>Disposer des droits nécessaires pour diffuser le contenu audio demandé au Bot.</li>
+      </ul>
+      <p>Nous nous réservons le droit de limiter, suspendre ou bloquer l'accès au Bot pour tout serveur ou utilisateur ne respectant pas ces règles.</p>
+    </section>
+
+    <section id="contenu">
+      <h2><span class="legal-num">03</span> Contenu utilisateur</h2>
+      <p>Par « Contenu Utilisateur », on entend toute donnée transmise au Bot : commandes textuelles, requêtes de recherche, noms de playlists, messages dans les salons où le Bot est présent.</p>
+      <p>Tu restes seul responsable du Contenu Utilisateur que tu soumets. Nous ne revendiquons aucune propriété sur ce contenu, mais tu nous accordes le droit de le traiter techniquement dans la seule mesure nécessaire au fonctionnement du service.</p>
+      <p>Nous pouvons supprimer ou ignorer tout Contenu Utilisateur jugé contraire à la loi, aux présentes conditions ou aux règles de Discord.</p>
+    </section>
+
+    <section id="propriete">
+      <h2><span class="legal-num">04</span> Propriété intellectuelle</h2>
+      <p>Le nom « DiscoZik », son logo, son code source (sauf mention contraire) et les éléments graphiques de ce site sont la propriété de l'équipe DiscoZik et sont protégés par le droit de la propriété intellectuelle.</p>
+      <p>Le contenu audio diffusé via le Bot (musiques, playlists) provient de plateformes tierces (YouTube, Spotify) et reste la propriété de leurs ayants droit respectifs. DiscoZik agit uniquement comme un outil technique de lecture.</p>
+      <p>Toute reproduction, modification ou distribution non autorisée des éléments propres à DiscoZik est interdite.</p>
+    </section>
+
+    <section id="responsabilite">
+      <h2><span class="legal-num">05</span> Limitation de responsabilité</h2>
+      <p>Le Bot est fourni « en l'état », sans garantie de disponibilité continue, d'absence d'erreur ou d'adéquation à un usage particulier.</p>
+      <p>Nous ne pourrons être tenus responsables :</p>
+      <ul>
+        <li>des interruptions de service, pannes, ou pertes de données liées à Discord, aux plateformes de streaming tierces ou à notre infrastructure ;</li>
+        <li>d'une utilisation du Contenu Utilisateur contraire aux présentes conditions ;</li>
+        <li>de dommages indirects résultant de l'usage ou de l'impossibilité d'usage du Bot.</li>
+      </ul>
+      <p>Notre responsabilité, si elle devait être engagée, est limitée dans les conditions prévues par la loi applicable.</p>
+    </section>
+
+    <section id="resiliation">
+      <h2><span class="legal-num">06</span> Résiliation</h2>
+      <p>Tu peux retirer le Bot de ton serveur à tout moment via les paramètres d'intégrations Discord.</p>
+      <p>Nous nous réservons le droit de suspendre ou résilier l'accès au Bot, pour un serveur ou un utilisateur donné, en cas de violation des présentes conditions, sans préavis en cas de manquement grave.</p>
+    </section>
+
+    <section id="modifications">
+      <h2><span class="legal-num">07</span> Modifications des conditions</h2>
+      <p>Nous pouvons modifier ces Conditions d'Utilisation à tout moment. Les modifications prennent effet dès leur publication sur cette page, avec mise à jour de la date en haut de page.</p>
+      <p>L'utilisation continue du Bot après une modification vaut acceptation des nouvelles conditions. En cas de changement majeur, nous nous efforcerons d'en informer les administrateurs de serveur via notre serveur Discord officiel de support.</p>
+    </section>
+
+    <section id="loi">
+      <h2><span class="legal-num">08</span> Loi applicable</h2>
+      <p>Les présentes conditions sont régies par le droit français. Tout litige relatif à leur interprétation ou leur exécution relève de la compétence des tribunaux de Paris, sauf disposition légale impérative contraire (notamment les règles de protection du consommateur applicables dans son pays de résidence).</p>
+    </section>
+
+    <section id="contact-legal">
+      <h2><span class="legal-num">09</span> Contact</h2>
+      <p>Pour toute question relative à ces conditions, contacte-nous :</p>
+      <ul>
+        <li>Email : contact@discozik.app</li>
+        <li>Serveur Discord de support : <a href="https://discord.gg/hXdMDfEAQU" target="_blank" rel="noopener">discord.gg/hXdMDfEAQU</a></li>
+      </ul>
+    </section>
+  </div>
+</div>
+  </div>
+  <div id="page-privacy" class="demo-page">
+    <section class="legal-hero">
+  <div class="container">
+    <h1>Politique de confidentialité</h1>
+    <p>Ce que DiscoZik collecte, pourquoi, et comment tu gardes le contrôle.</p>
+    <span class="legal-updated">Dernière mise à jour : 26 août 2026</span>
+  </div>
+</section>
+
+<div class="container legal-body">
+  <nav class="legal-toc">
+    <h4>Sommaire</h4>
+    <ol>
+      <li><a href="#donnees">1. Données collectées</a></li>
+      <li><a href="#utilisation-donnees">2. Utilisation des données</a></li>
+      <li><a href="#partage">3. Partage des données</a></li>
+      <li><a href="#securite">4. Sécurité des données</a></li>
+      <li><a href="#droits">5. Droits des utilisateurs</a></li>
+      <li><a href="#cookies">6. Cookies</a></li>
+      <li><a href="#modif-privacy">7. Modifications</a></li>
+      <li><a href="#contact-privacy">8. Contact</a></li>
+    </ol>
+  </nav>
+
+  <div class="legal-content">
+    <section id="donnees">
+      <h2><span class="legal-num">01</span> Données collectées</h2>
+      <p>Pour fonctionner, DiscoZik traite un nombre limité de données, strictement nécessaires au service :</p>
+      <ul>
+        <li><strong>Identifiants Discord</strong> : ID utilisateur, ID serveur, ID salon vocal et textuel (aucun mot de passe ni token de compte Discord n'est jamais collecté) ;</li>
+        <li><strong>Messages de commandes</strong> : le contenu des commandes envoyées au Bot (ex. <code>/play</code>, <code>/skip</code>) pour les traiter ;</li>
+        <li><strong>Historique de lecture</strong> : titres et files d'attente jouées sur un serveur, conservés temporairement pour les fonctions de queue et de reprise ;</li>
+        <li><strong>Préférences de configuration</strong> : rôle DJ, volume par défaut, salon dédié, définis par les administrateurs du serveur.</li>
+      </ul>
+      <p>Nous ne lisons ni ne stockons les messages échangés en dehors des commandes destinées au Bot.</p>
+    </section>
+
+    <section id="utilisation-donnees">
+      <h2><span class="legal-num">02</span> Utilisation des données</h2>
+      <p>Les données collectées servent exclusivement à :</p>
+      <ul>
+        <li>exécuter les commandes demandées (lecture, gestion de la queue, contrôle du volume...) ;</li>
+        <li>maintenir la configuration propre à chaque serveur ;</li>
+        <li>diagnostiquer des bugs et améliorer la fiabilité du service ;</li>
+        <li>produire des statistiques globales et anonymisées (nombre de serveurs, de commandes...).</li>
+      </ul>
+      <p>Nous n'utilisons jamais ces données à des fins publicitaires.</p>
+    </section>
+
+    <section id="partage">
+      <h2><span class="legal-num">03</span> Partage des données</h2>
+      <p>Nous ne vendons ni ne louons aucune donnée à des tiers. Les données peuvent transiter par :</p>
+      <ul>
+        <li>l'API Discord, nécessaire au fonctionnement du Bot ;</li>
+        <li>les plateformes de streaming (YouTube, Spotify) pour récupérer le contenu audio demandé ;</li>
+        <li>notre hébergeur d'infrastructure, OVHcloud, pour le stockage technique.</li>
+      </ul>
+      <p>Ces partenaires n'accèdent qu'aux données strictement nécessaires à l'exécution de leur mission et sont soumis à leurs propres politiques de confidentialité.</p>
+    </section>
+
+    <section id="securite">
+      <h2><span class="legal-num">04</span> Sécurité des données</h2>
+      <p>Nous mettons en œuvre des mesures techniques raisonnables (chiffrement en transit, accès restreint aux bases de données, journalisation des accès) pour protéger les données contre l'accès non autorisé, la perte ou l'altération.</p>
+      <p>Aucun système n'étant infaillible, nous ne pouvons garantir une sécurité absolue, mais nous nous engageons à notifier les administrateurs concernés en cas d'incident de sécurité significatif.</p>
+    </section>
+
+    <section id="droits">
+      <h2><span class="legal-num">05</span> Droits des utilisateurs</h2>
+      <p>Conformément à la réglementation applicable (notamment le RGPD pour les utilisateurs européens), tu disposes des droits suivants :</p>
+      <ul>
+        <li><strong>Droit d'accès</strong> : savoir quelles données te concernant sont conservées ;</li>
+        <li><strong>Droit de rectification</strong> : corriger une donnée inexacte ;</li>
+        <li><strong>Droit à l'effacement</strong> : demander la suppression de tes données par email ;</li>
+        <li><strong>Droit d'opposition</strong> : t'opposer à un traitement spécifique.</li>
+      </ul>
+      <p>Pour exercer ces droits, écris-nous à l'adresse indiquée en section Contact. Nous répondons dans un délai raisonnable, conforme aux obligations légales.</p>
+    </section>
+
+    <section id="cookies">
+      <h2><span class="legal-num">06</span> Cookies</h2>
+      <p>Ce site vitrine n'utilise pas de cookies de suivi ni de traceurs publicitaires. Le système de compte (inscription / connexion) présent sur ce site est une démonstration d'interface : les identifiants sont stockés (mot de passe haché) uniquement dans le stockage local de ton navigateur (localStorage) et n'envoient aucune donnée à un serveur tiers.</p>
+    </section>
+
+    <section id="modif-privacy">
+      <h2><span class="legal-num">07</span> Modifications</h2>
+      <p>Cette politique peut être mise à jour pour refléter des évolutions du Bot ou de la réglementation. La date de dernière mise à jour, en haut de page, permet de suivre ces changements. Les modifications importantes seront annoncées via notre serveur Discord officiel de support.</p>
+    </section>
+
+    <section id="contact-privacy">
+      <h2><span class="legal-num">08</span> Contact</h2>
+      <p>Pour toute question relative à tes données personnelles :</p>
+      <ul>
+        <li>Email : contact@discozik.app</li>
+        <li>Responsable des données : l'équipe DiscoZik</li>
+      </ul>
+    </section>
+  </div>
+</div>
+  </div>
+  <div id="page-status" class="demo-page">
+    <section class="section" style="padding-top:64px;">
+  <div class="container" style="max-width: 780px;">
+    <div class="section-head reveal" style="text-align:left; margin-bottom:36px;">
+      <span class="section-eyebrow">Transparence</span>
+      <h2>État des services DiscoZik</h2>
+      <p>Le statut ci-dessous est mis à jour manuellement par l'équipe depuis le panel d'administration.</p>
+    </div>
+
+    <div class="status-board reveal" data-status-board>
+      <!-- rempli dynamiquement par renderStatusPage() -->
+    </div>
+
+    <div class="status-legend reveal">
+      <span><span class="status-chip status-chip-green"></span> En ligne</span>
+      <span><span class="status-chip status-chip-yellow"></span> Bug connu / en développement</span>
+      <span><span class="status-chip status-chip-red"></span> Hors service</span>
+    </div>
+  </div>
+</section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" data-page="home" class="brand">
+          <span class="brand-mark">
+            <img src="data:image/png;base64,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" alt="Logo DiscoZik" />
+          </span>
+          DiscoZik
+        </a>
+        <p>Le bot de musique qui garde le rythme de ton serveur, 24 heures sur 24.</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Produit</h5>
+          <a href="#home-commandes" data-page="home" data-anchor="commandes">Fonctionnalités</a>
+          <a href="#status" data-page="status">Status</a>
+          <a href="https://discord.com/oauth2/authorize?client_id=1542224608017780858&permissions=8&integration_type=0&scope=bot" target="_blank" rel="noopener">Inviter le bot</a>
+        </div>
+        <div class="footer-col">
+          <h5>Légal</h5>
+          <a href="#tos" data-page="tos">Conditions d'utilisation</a>
+          <a href="#privacy" data-page="privacy">Confidentialité</a>
+        </div>
+        <div class="footer-col">
+          <h5>Aide</h5>
+          <a href="#home-contact" data-page="home" data-anchor="contact">Contact</a>
+          <a href="https://discord.gg/hXdMDfEAQU" target="_blank" rel="noopener">Serveur Discord</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> DiscoZik. Tous droits réservés.</span>
+      <span>Non affilié à Discord Inc.</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script>
+/* =========================================================
+   DiscoZik — script.js
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+  initNavToggle();
+  initScrollReveal();
+  initAccountsSystem();
+  initAuthWidget();
+  initContactForm();
+  initActiveNav();
+  initOwnerPanel();
+});
+
+/* ---------- Mobile nav toggle ---------- */
+function initNavToggle() {
+  const toggle = document.querySelector(".nav-toggle");
+  const links = document.querySelector(".nav-links");
+  if (!toggle || !links) return;
+
+  toggle.addEventListener("click", () => {
+    const isOpen = links.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  links.querySelectorAll("a").forEach((a) =>
+    a.addEventListener("click", () => links.classList.remove("open"))
+  );
+}
+
+/* ---------- Highlight current page in nav ---------- */
+function initActiveNav() {
+  const path = window.location.pathname.split("/").pop() || "index.html";
+  document.querySelectorAll(".nav-links a").forEach((a) => {
+    const href = a.getAttribute("href");
+    if (href === path) a.classList.add("active");
+  });
+}
+
+/* ---------- Scroll reveal ---------- */
+function initScrollReveal() {
+  const targets = document.querySelectorAll(".reveal, .track");
+  if (!targets.length) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  targets.forEach((t) => observer.observe(t));
+}
+
+/* =========================================================
+   Comptes DiscoZik — inscription / connexion
+   ⚠️ Démo front-end uniquement : les comptes sont stockés dans
+   le localStorage du navigateur (aucun vrai serveur). Les mots
+   de passe ne sont jamais gardés en clair : ils passent par
+   SHA-256 (Web Crypto) avant stockage. Voir la note de sécurité
+   dans la réponse du chat pour ce que ça couvre (ou pas).
+   ========================================================= */
+const DZ_USERS_KEY = "discozik_users";
+const DZ_SESSION_KEY = "discozik_session";
+const DZ_SUPPORT_KEY = "discozik_support_messages";
+const DZ_SERVERS_KEY = "discozik_servers";
+const DZ_STATUS_KEY = "discozik_status";
+
+const DZ_STATUS_LABELS = {
+  green: "En ligne",
+  yellow: "Bug connu / en développement",
+  red: "Hors service",
+};
+
+function dzGetStatus() {
+  try {
+    const stored = JSON.parse(localStorage.getItem(DZ_STATUS_KEY));
+    if (stored && stored.bot && stored.site && stored.host) return stored;
+  } catch (e) {}
+  return { bot: "green", site: "green", host: "green" };
+}
+function dzSaveStatus(status) { localStorage.setItem(DZ_STATUS_KEY, JSON.stringify(status)); }
+
+function dzRenderStatusPage() {
+  const board = document.querySelector("[data-status-board]");
+  if (!board) return;
+  const status = dzGetStatus();
+  const items = [
+    { key: "bot", label: "Bot DiscoZik" },
+    { key: "site", label: "Site web" },
+    { key: "host", label: "Hébergeur" },
+  ];
+  board.innerHTML = items.map((item) => `
+    <div class="status-row">
+      <span class="status-chip status-chip-${status[item.key]}"></span>
+      <span class="status-row-label">${item.label}</span>
+      <span class="status-row-text">${DZ_STATUS_LABELS[status[item.key]]}</span>
+    </div>
+  `).join("");
+}
+
+function dzHash(text) {
+  // Hash simple et synchrone (pas de dépendance à crypto.subtle, qui peut
+  // être indisponible en local file:// — voir note de sécurité dans le chat).
+  let h1 = 0xdeadbeef ^ 0, h2 = 0x41c6ce57 ^ 0;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text.charCodeAt(i);
+    h1 = Math.imul(h1 ^ ch, 2654435761);
+    h2 = Math.imul(h2 ^ ch, 1597334677);
+  }
+  h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507) ^ Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+  h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+  return (h1 >>> 0).toString(16).padStart(8, "0") + (h2 >>> 0).toString(16).padStart(8, "0");
+}
+
+function dzGetUsers() {
+  try { return JSON.parse(localStorage.getItem(DZ_USERS_KEY)) || []; }
+  catch (e) { return []; }
+}
+function dzSaveUsers(users) { localStorage.setItem(DZ_USERS_KEY, JSON.stringify(users)); }
+
+function dzGetSession() {
+  try { return JSON.parse(localStorage.getItem(DZ_SESSION_KEY)); }
+  catch (e) { return null; }
+}
+function dzSetSession(username) { localStorage.setItem(DZ_SESSION_KEY, JSON.stringify({ username })); }
+function dzClearSession() { localStorage.removeItem(DZ_SESSION_KEY); }
+
+function dzEscape(str) {
+  const d = document.createElement("div");
+  d.textContent = str;
+  return d.innerHTML;
+}
+
+/* Crée le compte owner "Nazoo" (et force son mot de passe à rester
+   synchronisé avec la valeur ci-dessous, même si la méthode de hash
+   a changé entre deux versions du site). */
+function initAccountsSystem() {
+  const users = dzGetUsers();
+  const correctHash = dzHash("Eamdpalc31!?");
+  const nazoo = users.find((u) => u.username.toLowerCase() === "nazoo");
+  if (!nazoo) {
+    users.push({
+      username: "Nazoo",
+      passHash: correctHash,
+      role: "owner",
+      banned: false,
+      createdAt: new Date().toISOString(),
+    });
+    dzSaveUsers(users);
+  } else if (nazoo.passHash !== correctHash || nazoo.role !== "owner" || nazoo.banned) {
+    nazoo.passHash = correctHash;
+    nazoo.role = "owner";
+    nazoo.banned = false;
+    dzSaveUsers(users);
+  }
+  if (!localStorage.getItem(DZ_SERVERS_KEY)) {
+    localStorage.setItem(DZ_SERVERS_KEY, JSON.stringify([]));
+  }
+}
+
+function initAuthWidget() {
+  const container = document.querySelector("[data-auth-slot]");
+  if (!container) return;
+
+  function initials(name) {
+    return (name || "?").slice(0, 2).toUpperCase();
+  }
+
+  function renderLoggedIn(user) {
+    container.innerHTML = "";
+    const isOwner = user.role === "owner";
+    const wrap = document.createElement("div");
+    wrap.className = "auth-widget";
+    wrap.innerHTML = `
+      <span class="auth-profile${isOwner ? " auth-profile-owner" : ""}"${isOwner ? ' data-open-owner tabindex="0" role="button"' : ""}>
+        <span class="auth-avatar">${initials(user.username)}</span>
+        <span class="auth-name">${dzEscape(user.username)}</span>
+        ${isOwner ? '<span class="auth-owner-tag">Owner</span>' : ""}
+      </span>
+      <button class="btn btn-ghost btn-sm" type="button" data-logout>Déconnexion</button>
+    `;
+    container.appendChild(wrap);
+    wrap.querySelector("[data-logout]").addEventListener("click", () => {
+      dzClearSession();
+      renderLoggedOut();
+    });
+    const ownerTrigger = wrap.querySelector("[data-open-owner]");
+    if (ownerTrigger) {
+      ownerTrigger.addEventListener("click", () => dzOpenOwnerPanel());
+      ownerTrigger.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          dzOpenOwnerPanel();
+        }
+      });
+    }
+  }
+
+  function renderLoggedOut() {
+    container.innerHTML = "";
+    const btn = document.createElement("button");
+    btn.className = "btn btn-blue btn-sm";
+    btn.type = "button";
+    btn.textContent = "Connexion / Inscription";
+    btn.addEventListener("click", () => dzOpenAuthModal(refresh));
+    container.appendChild(btn);
+  }
+
+  function refresh() {
+    const session = dzGetSession();
+    if (!session) { renderLoggedOut(); return; }
+    const users = dzGetUsers();
+    const user = users.find((u) => u.username === session.username);
+    if (!user || user.banned) { dzClearSession(); renderLoggedOut(); return; }
+    renderLoggedIn(user);
+  }
+
+  refresh();
+  window.dzRefreshAuthWidget = refresh;
+}
+
+/* ---------- Modale inscription / connexion ---------- */
+function dzOpenAuthModal(onDone) {
+  const overlay = document.createElement("div");
+  overlay.className = "dz-modal-overlay";
+  overlay.innerHTML = `
+    <div class="dz-modal" role="dialog" aria-modal="true">
+      <div class="dz-modal-tabs">
+        <button type="button" class="dz-tab active" data-tab="login">Connexion</button>
+        <button type="button" class="dz-tab" data-tab="register">Inscription</button>
+        <button type="button" class="dz-modal-close" aria-label="Fermer">&times;</button>
+      </div>
+      <form class="dz-modal-form" data-form="login">
+        <div class="field"><label>Nom d'utilisateur</label><input type="text" name="username" autocomplete="username" required /></div>
+        <div class="field"><label>Mot de passe</label><input type="password" name="password" autocomplete="current-password" required /></div>
+        <p class="dz-modal-error" hidden></p>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Se connecter</button>
+      </form>
+      <form class="dz-modal-form" data-form="register" hidden>
+        <div class="field"><label>Nom d'utilisateur</label><input type="text" name="username" autocomplete="username" required minlength="3" maxlength="24" /></div>
+        <div class="field"><label>Mot de passe</label><input type="password" name="password" autocomplete="new-password" required minlength="8" /></div>
+        <p class="dz-modal-error" hidden></p>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Créer mon compte</button>
+      </form>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+  document.body.style.overflow = "hidden";
+
+  const close = () => { overlay.remove(); document.body.style.overflow = ""; };
+  overlay.addEventListener("click", (e) => { if (e.target === overlay) close(); });
+  overlay.querySelector(".dz-modal-close").addEventListener("click", close);
+
+  const tabs = overlay.querySelectorAll(".dz-tab");
+  const forms = overlay.querySelectorAll(".dz-modal-form");
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach((t) => t.classList.remove("active"));
+      tab.classList.add("active");
+      forms.forEach((f) => { f.hidden = f.dataset.form !== tab.dataset.tab; });
+    });
+  });
+
+  const loginForm = overlay.querySelector('[data-form="login"]');
+  const registerForm = overlay.querySelector('[data-form="register"]');
+
+  loginForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const err = loginForm.querySelector(".dz-modal-error");
+    err.hidden = true;
+    const username = loginForm.username.value.trim();
+    const password = loginForm.password.value;
+    const users = dzGetUsers();
+    const user = users.find((u) => u.username.toLowerCase() === username.toLowerCase());
+    const hash = dzHash(password);
+    if (!user || user.passHash !== hash) {
+      err.textContent = "Nom d'utilisateur ou mot de passe invalide.";
+      err.hidden = false;
+      return;
+    }
+    if (user.banned) {
+      err.textContent = "Ce compte a été banni du site.";
+      err.hidden = false;
+      return;
+    }
+    dzSetSession(user.username);
+    close();
+    onDone && onDone();
+  });
+
+  registerForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const err = registerForm.querySelector(".dz-modal-error");
+    err.hidden = true;
+    const username = registerForm.username.value.trim();
+    const password = registerForm.password.value;
+    const users = dzGetUsers();
+
+    if (username.length < 3) {
+      err.textContent = "Le nom d'utilisateur doit faire au moins 3 caractères.";
+      err.hidden = false;
+      return;
+    }
+    if (users.some((u) => u.username.toLowerCase() === username.toLowerCase())) {
+      err.textContent = "Ce nom d'utilisateur est déjà pris.";
+      err.hidden = false;
+      return;
+    }
+    if (password.length < 8) {
+      err.textContent = "Le mot de passe doit faire au moins 8 caractères.";
+      err.hidden = false;
+      return;
+    }
+
+    users.push({
+      username,
+      passHash: dzHash(password),
+      role: "member",
+      banned: false,
+      createdAt: new Date().toISOString(),
+    });
+    dzSaveUsers(users);
+    dzSetSession(username);
+    close();
+    onDone && onDone();
+  });
+}
+
+/* ---------- Panel owner : gestion utilisateurs / serveurs / support ---------- */
+function initOwnerPanel() {
+  // rien à initialiser au chargement, le panel s'ouvre à la demande
+}
+
+function dzOpenOwnerPanel() {
+  const session = dzGetSession();
+  const users = dzGetUsers();
+  const me = users.find((u) => u.username === (session && session.username));
+  if (!me || me.role !== "owner") return;
+
+  const servers = JSON.parse(localStorage.getItem(DZ_SERVERS_KEY) || "[]");
+  const messages = JSON.parse(localStorage.getItem(DZ_SUPPORT_KEY) || "[]");
+
+  const overlay = document.createElement("div");
+  overlay.className = "dz-modal-overlay";
+  overlay.innerHTML = `
+    <div class="dz-modal dz-modal-lg" role="dialog" aria-modal="true">
+      <div class="dz-modal-tabs">
+        <button type="button" class="dz-tab active" data-panel="users">Utilisateurs</button>
+        <button type="button" class="dz-tab" data-panel="servers">Serveurs</button>
+        <button type="button" class="dz-tab" data-panel="support">Support</button>
+        <button type="button" class="dz-tab" data-panel="status">Status</button>
+        <button type="button" class="dz-modal-close" aria-label="Fermer">&times;</button>
+      </div>
+      <div class="dz-panel" data-panel-content="users">
+        <p class="dz-panel-hint">Bannir un compte l'empêche de se reconnecter au site.</p>
+        <div class="dz-list">
+          ${users.map((u) => `
+            <div class="dz-row">
+              <span>${dzEscape(u.username)}${u.role === "owner" ? ' <span class="auth-owner-tag">Owner</span>' : ""}${u.banned ? " <em>(banni)</em>" : ""}</span>
+              ${u.role !== "owner" ? `<button class="btn btn-ghost btn-sm" type="button" data-ban="${dzEscape(u.username)}">${u.banned ? "Débannir" : "Bannir"}</button>` : ""}
+            </div>
+          `).join("") || "<p>Aucun compte pour le moment.</p>"}
+        </div>
+      </div>
+      <div class="dz-panel" data-panel-content="servers" hidden>
+        <p class="dz-panel-hint">Serveurs Discord où le bot est enregistré (données locales de démo).</p>
+        <div class="dz-list">
+          ${servers.map((s, i) => `
+            <div class="dz-row">
+              <span>${dzEscape(s.name)} <em>(${dzEscape(s.id || "id inconnu")})</em></span>
+              <button class="btn btn-ghost btn-sm" type="button" data-remove-server="${i}">Retirer</button>
+            </div>
+          `).join("") || "<p>Aucun serveur enregistré pour l'instant.</p>"}
+        </div>
+        <form class="dz-inline-form" data-form="add-server">
+          <input type="text" name="name" placeholder="Nom du serveur" required />
+          <input type="text" name="id" placeholder="ID du serveur" />
+          <button type="submit" class="btn btn-primary btn-sm">Ajouter</button>
+        </form>
+      </div>
+      <div class="dz-panel" data-panel-content="support" hidden>
+        <p class="dz-panel-hint">Messages envoyés depuis le formulaire de contact du site.</p>
+        <div class="dz-list">
+          ${messages.slice().reverse().map((m) => `
+            <div class="dz-support-msg">
+              <strong>${dzEscape(m.name)}</strong> — <span>${dzEscape(m.email)}</span>
+              <p>${dzEscape(m.message)}</p>
+              <span class="dz-support-date">${dzEscape(new Date(m.date).toLocaleString("fr-FR"))}</span>
+            </div>
+          `).join("") || "<p>Aucun message pour le moment.</p>"}
+        </div>
+      </div>
+      <div class="dz-panel" data-panel-content="status" hidden>
+        <p class="dz-panel-hint">Change l'état affiché sur la page publique « Status » du site.</p>
+        <div class="dz-status-editor">
+          ${["bot", "site", "host"].map((key) => {
+            const labels = { bot: "Bot DiscoZik", site: "Site web", host: "Hébergeur" };
+            const current = dzGetStatus()[key];
+            return `
+            <div class="dz-status-editor-row">
+              <strong>${labels[key]}</strong>
+              <div class="dz-status-btns">
+                <button type="button" class="dz-status-btn${current === "green" ? " active" : ""}" data-color="green" data-status-set="${key}:green">Marche</button>
+                <button type="button" class="dz-status-btn${current === "yellow" ? " active" : ""}" data-color="yellow" data-status-set="${key}:yellow">Bug / dev</button>
+                <button type="button" class="dz-status-btn${current === "red" ? " active" : ""}" data-color="red" data-status-set="${key}:red">Marche plus</button>
+              </div>
+            </div>`;
+          }).join("")}
+        </div>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+  document.body.style.overflow = "hidden";
+  const close = () => { overlay.remove(); document.body.style.overflow = ""; };
+  overlay.addEventListener("click", (e) => { if (e.target === overlay) close(); });
+  overlay.querySelector(".dz-modal-close").addEventListener("click", close);
+
+  const tabs = overlay.querySelectorAll(".dz-tab");
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach((t) => t.classList.remove("active"));
+      tab.classList.add("active");
+      overlay.querySelectorAll("[data-panel-content]").forEach((p) => {
+        p.hidden = p.dataset.panelContent !== tab.dataset.panel;
+      });
+    });
+  });
+
+  overlay.querySelectorAll("[data-ban]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const list = dzGetUsers();
+      const target = list.find((u) => u.username === btn.dataset.ban);
+      if (target) {
+        target.banned = !target.banned;
+        dzSaveUsers(list);
+        close();
+        dzOpenOwnerPanel();
+      }
+    });
+  });
+
+  overlay.querySelectorAll("[data-remove-server]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const list = JSON.parse(localStorage.getItem(DZ_SERVERS_KEY) || "[]");
+      list.splice(Number(btn.dataset.removeServer), 1);
+      localStorage.setItem(DZ_SERVERS_KEY, JSON.stringify(list));
+      close();
+      dzOpenOwnerPanel();
+    });
+  });
+
+  overlay.querySelectorAll("[data-status-set]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const [key, color] = btn.dataset.statusSet.split(":");
+      const status = dzGetStatus();
+      status[key] = color;
+      dzSaveStatus(status);
+      dzRenderStatusPage();
+      close();
+      dzOpenOwnerPanel();
+    });
+  });
+
+  const addServerForm = overlay.querySelector('[data-form="add-server"]');
+  if (addServerForm) {
+    addServerForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const list = JSON.parse(localStorage.getItem(DZ_SERVERS_KEY) || "[]");
+      list.push({ name: addServerForm.name.value.trim(), id: addServerForm.id.value.trim() });
+      localStorage.setItem(DZ_SERVERS_KEY, JSON.stringify(list));
+      close();
+      dzOpenOwnerPanel();
+    });
+  }
+}
+
+/* ---------- Contact form validation (front-end only) ---------- */
+function initContactForm() {
+  const form = document.querySelector("#contact-form");
+  if (!form) return;
+
+  const status = form.querySelector(".form-status");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let valid = true;
+
+    const nameField = form.querySelector("#c-name").closest(".field");
+    const emailField = form.querySelector("#c-email").closest(".field");
+    const msgField = form.querySelector("#c-message").closest(".field");
+
+    const nameVal = form.querySelector("#c-name").value.trim();
+    const emailVal = form.querySelector("#c-email").value.trim();
+    const msgVal = form.querySelector("#c-message").value.trim();
+
+    const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    [nameField, emailField, msgField].forEach((f) => f.classList.remove("invalid"));
+
+    if (nameVal.length < 2) {
+      nameField.classList.add("invalid");
+      valid = false;
+    }
+    if (!emailRe.test(emailVal)) {
+      emailField.classList.add("invalid");
+      valid = false;
+    }
+    if (msgVal.length < 10) {
+      msgField.classList.add("invalid");
+      valid = false;
+    }
+
+    if (valid) {
+      const messages = JSON.parse(localStorage.getItem("discozik_support_messages") || "[]");
+      messages.push({ name: nameVal, email: emailVal, message: msgVal, date: new Date().toISOString() });
+      localStorage.setItem("discozik_support_messages", JSON.stringify(messages));
+      status.textContent = "Message envoyé ! Nous te répondons sous 48h.";
+      status.classList.add("show");
+      form.reset();
+    } else {
+      status.classList.remove("show");
+    }
+  });
+}
+
+
+/* ---------- Router (test build) ---------- */
+function initDemoRouter() {
+  const pages = document.querySelectorAll('.demo-page');
+  const links = document.querySelectorAll('[data-page]');
+
+  function show(pageId, anchor) {
+    pages.forEach(p => p.classList.toggle('demo-page-active', p.id === 'page-' + pageId));
+    links.forEach(l => {
+      const match = l.dataset.page === pageId && !l.dataset.anchor;
+      l.classList.toggle('active', match);
+    });
+    window.scrollTo({ top: 0 });
+    if (pageId === 'status') dzRenderStatusPage();
+    if (anchor) {
+      setTimeout(() => {
+        const el = document.getElementById(anchor);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 50);
+    }
+    document.querySelectorAll('.nav-links').forEach(n => n.classList.remove('open'));
+  }
+
+  links.forEach(l => {
+    l.addEventListener('click', (e) => {
+      e.preventDefault();
+      show(l.dataset.page, l.dataset.anchor);
+    });
+  });
+
+  show('home');
+}
+document.addEventListener('DOMContentLoaded', initDemoRouter);
+
+</script>
+</body>
+</html>
